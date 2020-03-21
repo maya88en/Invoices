@@ -99,8 +99,8 @@ GEM
     pg (1.2.2)
     pg (1.2.2-x64-mingw32)
     pg (1.2.2-x86-mingw32)
-    puma (3.9.1)
-    puma (3.9.1-java)
+    puma (3.12.4)
+    puma (3.12.4-java)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -204,7 +204,7 @@ DEPENDENCIES
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)
   pg
-  puma (= 3.9.1)
+  puma (= 3.12.4)
   rails (= 5.1.6)
   sass-rails (= 5.0.6)
   simple_form
