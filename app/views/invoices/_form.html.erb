@@ -135,14 +135,15 @@
   <% end %>
 </div>
 
-<div class="modal fade" id="invoice_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="width:920px">
-      <div class="container-fluid invoice_wrapper" style="margin:10px" id="print-me">
-        <%= render 'invoice' %>
-      </div>
+<div class="modal" id="invoice_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="container-fluid invoice_wrapper" id="print-me">
+              <%= render 'invoice' %>
+        </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" onclick="printDiv('print-me')">Print</button>
+        <button type="button" class="btn btn-primary">Print</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
