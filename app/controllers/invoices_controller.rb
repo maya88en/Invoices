@@ -16,6 +16,7 @@ class InvoicesController < ApplicationController
   def new
     @invoice = Invoice.new
     @products = Product.all
+    @stocks = Stock.all
   end
 
   # GET /invoices/1/edit
