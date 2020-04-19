@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20200413193317) do
     t.integer "serial_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_stocks_on_product_id"
   end
 
 end
