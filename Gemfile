@@ -11,6 +11,14 @@ gem 'pg'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'simple_form'
 
+source 'https://rubygems.org'
+
+gem "jekyll", "~> 4.2"
+
+group :jekyll_plugins do
+  gem "jekyll-timeago", "~> 0.13.1"
+end
+
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
